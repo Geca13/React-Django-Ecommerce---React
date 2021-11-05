@@ -20,6 +20,7 @@ function ProductPage({ match, history }) {
 
     const addToCartHandler = () => {
        history.push(`/cart/${match.params.id}?qty=${qty}`)
+       
     }
    
    
