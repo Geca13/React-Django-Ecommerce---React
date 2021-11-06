@@ -26,3 +26,10 @@ export const login = (email , password) => async (dispatch) =>{
         error.response.data.detail ? error.response.data.detail : error.message}) 
     }
 }
+
+export const logout = () =>(dispatch) =>{
+    localStorage.removeItem('userInfo')
+    dispatch({
+        type: USER_LOGOUT
+    })
+}
