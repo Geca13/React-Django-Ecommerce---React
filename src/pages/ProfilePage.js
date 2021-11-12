@@ -97,5 +97,4 @@ function ProfilePage({ history }) {
         </Row>
     )
 }
-
 export default ProfilePage
